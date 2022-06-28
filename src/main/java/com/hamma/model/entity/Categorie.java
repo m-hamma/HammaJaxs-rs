@@ -1,4 +1,4 @@
-package com.hamma.entity;
+package com.hamma.model.entity;
 
 import java.io.Serializable;
 

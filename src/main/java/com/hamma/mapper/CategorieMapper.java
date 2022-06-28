@@ -4,7 +4,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 import com.hamma.dto.CategorieDto;
-import com.hamma.entity.Categorie;
+import com.hamma.model.entity.Categorie;
 
 @Mapper
 public interface CategorieMapper {

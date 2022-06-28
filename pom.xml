@@ -17,18 +17,25 @@
 		<hikari.version>4.0.3</hikari.version>
 		<h2.version>2.1.214</h2.version>
 		<hibernate.version>5.6.9.Final</hibernate.version>
+		<jakarta.servlet.version>6.0.0</jakarta.servlet.version>
 	</properties>
 
 
 	<dependencyManagement>
 		<dependencies>
-			 <dependency>
-                <groupId>org.glassfish.jersey</groupId>
-                <artifactId>jersey-bom</artifactId>
-                <version>${jersey.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+			<dependency>
+				<groupId>org.glassfish.jersey</groupId>
+				<artifactId>jersey-bom</artifactId>
+				<version>${jersey.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>jakarta.servlet</groupId>
+				<artifactId>jakarta.servlet-api</artifactId>
+				<version>${jakarta.servlet.version}</version>
+				<scope>provided</scope>
+			</dependency>
 			<dependency>
 				<groupId>jakarta.persistence</groupId>
 				<artifactId>jakarta.persistence-api</artifactId>
@@ -94,6 +101,10 @@
 	</dependencyManagement>
 	<dependencies>
 		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>jakarta.persistence</groupId>
 			<artifactId>jakarta.persistence-api</artifactId>
 		</dependency>
@@ -128,7 +139,10 @@
 			<artifactId>jersey-media-json-jackson</artifactId>
 			<!-- NO VERSION NEEDED BECAUSE OF THE BOM -->
 		</dependency>
-
+		<dependency>
+			<groupId>org.glassfish.jersey.inject</groupId>
+			<artifactId>jersey-hk2</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.glassfish.jersey.containers</groupId>
 			<artifactId>jersey-container-servlet</artifactId>
@@ -145,11 +159,11 @@
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct-processor</artifactId>
 		</dependency>
-		
+
 	</dependencies>
 
 	<build>
-		<finalName>exemple-jersey</finalName>
+		<finalName>hamma-jersey</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

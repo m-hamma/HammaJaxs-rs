@@ -1,12 +1,11 @@
 module JaxRsModule {
 	//requires static lombok;
-	exports com.hamma.entity;
+	exports com.hamma.model.entity;
 	requires java.desktop;
 	requires java.xml;
 	requires jdk.compiler;
 	requires jdk.javadoc;
 	requires lombok;
-	requires org.aspectj.weaver;
 	requires com.h2database;
 	requires java.persistence;
 	requires jersey.common;
@@ -20,5 +19,8 @@ module JaxRsModule {
 	requires jersey.server;
 	requires jakarta.validation;
 	requires jakarta.ws.rs;
+	requires jakarta.inject;
+	requires jakarta.servlet;
+	requires org.glassfish.hk2.api;
 	//requires jakarta.pers;
 }
