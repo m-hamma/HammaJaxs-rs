@@ -1,4 +1,4 @@
-package dto;
+package com.hamma.dto;
 
 import java.io.Serializable;
 

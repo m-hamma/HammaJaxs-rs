@@ -17,5 +17,8 @@ module JaxRsModule {
 	requires java.base;
 	requires static org.mapstruct;
 	requires org.mapstruct.processor;
+	requires jersey.server;
+	requires jakarta.validation;
+	requires jakarta.ws.rs;
 	//requires jakarta.pers;
 }
