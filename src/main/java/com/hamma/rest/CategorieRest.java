@@ -2,9 +2,9 @@ package com.hamma.rest;
 
 import com.hamma.services.CategorieService;
 
-import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
+import jakarta.inject.*;
 import jakarta.ws.rs.core.Response;
 
 @Path("/categories")

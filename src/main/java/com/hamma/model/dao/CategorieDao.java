@@ -1,5 +1,9 @@
 package com.hamma.model.dao;
 
-public class CategorieDao {
+import org.jvnet.hk2.annotations.Contract;
+import org.jvnet.hk2.annotations.Service;
+
+@Contract
+public interface CategorieDao {
 
 }
