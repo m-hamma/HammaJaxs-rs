@@ -1,6 +1,10 @@
 module JaxRsModule {
-	//requires static lombok;
+	exports com.hamma.config;
 	exports com.hamma.model.entity;
+	exports com.hamma.model.dao;
+	exports com.hamma.services;
+	exports com.hamma.rest;
+	//requires static lombok;
 	requires java.desktop;
 	requires java.xml;
 	requires jdk.compiler;
